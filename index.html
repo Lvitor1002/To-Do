@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <main>
+        <div class="controle">
+
+            <header>
+                <h1>Tarefas</h1>
+                <i class="bi bi-person-lines-fill"></i>
+            </header>
+
+            <form id="idFormularioAdicao" class="formularioAdicao">
+                <h3>Adicione sua tarefa</h3>
+                <input type="text" name="tarefa" id="idTarefa" placeholder="Qual o plano para hoje?" maxlength="255">
+                <button id="idBtnAddTarefa" class="bi bi-file-earmark-plus"></button>
+            </form>
+            
+            <form id="idFormularioEdicao" class="formularioEdicao ocultar"><!--ocultar -->
+                <h3>Edite sua tarefa</h3>
+                <div class="controleEdicao">
+                    <input type="text" name="editar" id="idEditar">
+                    <button id="idBtnConfirmaEditar" class="bi bi-check2-all btnConfirmaEditar"></button>
+                </div>
+                <button id="idBtnCancelarEditarTarefa" class="btnCancelarEditarTarefa">Cancelar</button>
+            </form>
+            
+            <form id="idFormularioPesquisarFiltar" class="formularioPesquisarFiltar">
+
+                <div class="controlePesquisa">
+                    <h3>Pesquisar</h3>
+                    <input type="text" name="pesquisar" id="idPesquisar" class="pesquisar" placeholder="Buscar...">
+                </div>
+
+                <div class="controleFiltrar">
+                    <h3>Filtrar por:</h3>
+                    <select name="escolha" id="idEscolha">
+                        <option value="Todos">Todos</option>
+                        <option value="Afazer">A fazer</option>
+                        <option value="Concluido">Concluído</option>
+                    </select>
+                </div>
+                
+            </form>
+
+
+            <div id="idCampoListaTarefas" class="campoListaTarefas">
+                
+                <!-- js -->
+                
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+

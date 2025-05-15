@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, orange, rgb(243, 204, 133), rgb(248, 237, 201));
+}
+header{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+header i{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 50px;
+    color: rgb(209, 136, 0);
+}
+
+.controle{
+    min-width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 12px -5px black;
+    gap: 1%;
+}
+.controle h1{
+    font-family:small-caps;
+    font-size: 50px;
+    padding: 10px 0;
+    color: rgb(145, 94, 0);
+    text-shadow: 0px 0px 0.5px black;
+}
+.controle h3{
+    font-size: 22px;
+    padding: 10px 0;
+    color: rgba(214, 139, 1, 0.801);
+    text-shadow: 0px 0px 0.5px black;
+}
+.controle form{
+    width: 100%;
+    padding: 10px;
+}
+.controle input,select{
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    width: 70%;
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    background-color: white;
+    background-color: rgba(255, 235, 197, 0.63);
+    color: orange;
+    box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.425);
+}
+.controle select{
+    cursor: pointer;
+}
+.controle button{
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px 0;
+    border: 0;
+    border-radius: 2px;
+
+    color: rgb(209, 136, 0);
+    
+    background-color: rgb(253, 235, 201);
+    cursor: pointer;
+    box-shadow: 0px 0px 8px -4px rgba(0, 0, 0, 0.514);
+    transition: all 2s;
+}
+.controle button:active{
+    transform: scale(1.1);
+    transition-duration: 0s;
+}
+.controle button:hover{
+    color: white;
+    background-color: orange;
+    transition-duration: 0s;
+}
+
+.campoListaTarefas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column-reverse;
+    overflow-y: auto;
+}
+.listaTarefas{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(255, 242, 218);
+    
+}
+
+/* Para filtro e pesquisa ------------------------*/
+.listaTarefas.concluida {
+    opacity: 0.6;
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+}
+.controlePesquisa {
+    position: relative;
+}
+
+/* ----------------------------------------------- */
+.controleBtns{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.formularioAdicao{
+    border-top: .5px solid rgba(0, 0, 0, 0.205);
+    border-bottom: .5px solid rgba(0, 0, 0, 0.205);
+}
+.formularioEdicao{
+    border-bottom: .5px solid rgba(0, 0, 0, 0.205);
+}
+.formularioPesquisarFiltar{
+    border-bottom: .5px solid rgba(0, 0, 0, 0.205);
+    display: flex;
+    flex-direction: row;
+}
+.formularioPesquisarFiltar .controleFiltrar{
+    width: 50%;
+    padding: 0 10px;
+    border-left: .5px solid rgba(0, 0, 0, 0.055);
+}
+.controleTexto{
+    width: 60%;
+    padding: 10px 5px;
+    background-color: rgba(255, 166, 0, 0.89);
+    border-radius: 10px;
+}
+.ocultar{
+    display: none;
+}
+.cor{
+    background-color: rgba(5, 155, 255, 0.541);
+    transition: all .5s;
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    .controle{
+        min-width: 95%;
+    }
+}
