@@ -9,6 +9,7 @@
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 
 </head>
 <body>
@@ -23,16 +24,16 @@
             <form id="idFormularioAdicao" class="formularioAdicao">
                 <h3>Adicione sua tarefa</h3>
                 <input type="text" name="tarefa" id="idTarefa" placeholder="Qual o plano para hoje?" maxlength="255">
-                <button id="idBtnAddTarefa" class="bi bi-file-earmark-plus"></button>
+                <button type="button" id="idBtnAddTarefa" class="bi bi-file-earmark-plus"></button>
             </form>
             
             <form id="idFormularioEdicao" class="formularioEdicao ocultar"><!--ocultar -->
                 <h3>Edite sua tarefa</h3>
                 <div class="controleEdicao">
                     <input type="text" name="editar" id="idEditar">
-                    <button id="idBtnConfirmaEditar" class="bi bi-check2-all btnConfirmaEditar"></button>
+                    <button type="button" id="idBtnConfirmaEditar" class="bi bi-check2-all btnConfirmaEditar"></button>
                 </div>
-                <button id="idBtnCancelarEditarTarefa" class="btnCancelarEditarTarefa">Cancelar</button>
+                <button type="button" id="idBtnCancelarEditarTarefa" class="btnCancelarEditarTarefa">Cancelar</button>
             </form>
             
             <form id="idFormularioPesquisarFiltar" class="formularioPesquisarFiltar">
@@ -56,8 +57,22 @@
 
             <div id="idCampoListaTarefas" class="campoListaTarefas">
                 
-                <!-- js -->
-                
+                <!--                    js 
+
+                <div class="listaTarefas">
+
+                    <div class="controleTexto">
+                        <p></p>
+                    </div>
+
+                    <div class="controleBtns">
+                        <button class="btnSelecionarTarefa bi bi-check2-circle"></button>
+                        <button class="btnEditarTarefa bi bi-pencil-square"></button>
+                        <button class="btnRemoverTarefa bi bi-x-lg"></button>
+                    </div>
+
+                </div>-->
+
             </div>
 
         </div>
